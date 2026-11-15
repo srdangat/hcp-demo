@@ -14,6 +14,7 @@ resource "aws_subnet" "public" {
   availability_zone = var.public_subnet_az
   tags = {
     Name = "public-subnet"
+    Environment = "development"
   }
 }
 
@@ -23,5 +24,6 @@ resource "aws_subnet" "private" {
   availability_zone = var.private_subnet_az
   tags = {
     Name = "private-subnet"
+    Environment = "development"
   }
 }
